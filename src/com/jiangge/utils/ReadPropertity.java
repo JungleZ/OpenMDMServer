@@ -5,7 +5,7 @@ public class ReadPropertity {
         static Properties props = new Properties();
         static {
                 try {
-                        props.load(ReadPropertity.class.getClassLoader().getResourceAsStream("config.properties"));
+                        props.load(ReadPropertity.class.getClassLoader().getResourceAsStream("/conf/config.properties"));
                 } catch (IOException e1) {
                         e1.printStackTrace();
                 }
