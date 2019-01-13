@@ -1,4 +1,6 @@
+CREATE DATABASE IF NOT EXISTS openmdmserver default charset utf8 COLLATE utf8_general_ci;
 
+USE openmdmserver;
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   `id` varchar(255) COLLATE utf8_bin NOT NULL,
