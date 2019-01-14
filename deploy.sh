@@ -50,6 +50,8 @@ echo "from  $PROJ_PATH/OpenMDMServer to $TOMCAT_APP_PATH/webapps/"
 # cd $TOMCAT_APP_PATH/webapps
 # mv order.war ROOT.war
 mv $TOMCAT_APP_PATH/OpenMDMServer $TOMCAT_APP_PATH/ROOT
+
+echo "set up success"
 #启动tomcat 
 cd $TOMCAT_APP_PATH/
 sh bin/startup.sh
