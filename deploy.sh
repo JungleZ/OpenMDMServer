@@ -1,5 +1,5 @@
 #!/bin/bash  -ilex
-# deploy.sh
+# deploy.sh xxx
 
 #BUILD_ID = DONTKILLME
 #. /etc/profile
