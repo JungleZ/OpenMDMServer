@@ -19,7 +19,7 @@
 killTomcat()
 {
 	pid=`ps -ef | grep tomcat |grep java | awk '{print $2}'`
-	echo "tomcat Id list : $pid"
+	echo "tomcat Id list $pid"
 	if ["$pid" = ""]
 	then 
 	   echo "no tomcat pid alive"
