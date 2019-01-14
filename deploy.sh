@@ -22,7 +22,7 @@ killTomcat()
 	echo "tomcat Id list $pid"
 	if ["$pid" = ""]
 	then 
-	   echo "no tomcat pid alive"
+	   echo "no tomcat pid alive "
 	else 
 	   kill -9 $pid
 	fi
@@ -40,6 +40,8 @@ rm -rf $TOMCAT_APP_PATH/webapps/OpenMDMServer
 
 #复制新的工程
 cp $PROJ_PATH/OpenMDMServer $TOMCAT_APP_PATH/webapps/
+
+echo "from  $PROJ_PATH/OpenMDMServer to $TOMCAT_APP_PATH/webapps/"
 
 # cd $TOMCAT_APP_PATH/webapps
 # mv order.war ROOT.war
