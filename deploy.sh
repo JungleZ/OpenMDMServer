@@ -37,15 +37,19 @@ killTomcat
 #rm -rf $TOMCAT_APP_PATH/webapps/TOOT.war
 #rm -rf $TOMCAT_APP_PATH/webapps/OpenMDMServer.war
 rm -rf $TOMCAT_APP_PATH/webapps/OpenMDMServer
-
+rm -rf $TOMCAT_APP_PATH/webapps/docs
+rm -rf $TOMCAT_APP_PATH/webapps/examples
+rm -rf $TOMCAT_APP_PATH/webapps/host-manager
+rm -rf $TOMCAT_APP_PATH/webapps/manager
+rm -rf $TOMCAT_APP_PATH/webapps/TOOT
 #复制新的工程
-cp $PROJ_PATH/OpenMDMServer $TOMCAT_APP_PATH/webapps/
+cp -r $PROJ_PATH/OpenMDMServer $TOMCAT_APP_PATH/webapps/
 
 echo "from  $PROJ_PATH/OpenMDMServer to $TOMCAT_APP_PATH/webapps/"
 
 # cd $TOMCAT_APP_PATH/webapps
 # mv order.war ROOT.war
-
+mv OpenMDMServer ROOT
 #启动tomcat 
 cd $TOMCAT_APP_PATH/
 sh bin/startup.sh
