@@ -14,6 +14,8 @@ export $TOMCAT_APP_PATH = "/usr/local/src/tomcat"
 
 echo "tomcat path is : $TOMCAT_APP_PATH"
 
+sh $PROJ_PATH/OpenMDMServer/deploy.sh
+
 killTomcat()
 {
 	pid=`ps -ef | grep tomcat |grep java | awk '{print $2}'`
