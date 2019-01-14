@@ -1,20 +1,20 @@
 #!/bin/sh
 # deploy.sh
 
-BUILD_ID = DONTKILLME
-. /etc/profile
-
-
-
-export $PROJ_PATH = `pwd`
-
-echo "project path is : $PROJ_PATH"
-
-export $TOMCAT_APP_PATH = "/usr/local/src/tomcat"
-
-echo "tomcat path is : $TOMCAT_APP_PATH"
-
-sh $PROJ_PATH/OpenMDMServer/deploy.sh
+#BUILD_ID = DONTKILLME
+#. /etc/profile
+#
+#
+#
+#export $PROJ_PATH = `pwd`
+#
+#echo "project path is : $PROJ_PATH"
+#
+#export $TOMCAT_APP_PATH = "/usr/local/src/tomcat"
+#
+#echo "tomcat path is : $TOMCAT_APP_PATH"
+#
+#sh $PROJ_PATH/OpenMDMServer/deploy.sh
 
 killTomcat()
 {
