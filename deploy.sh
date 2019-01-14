@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash  -ilex
 # deploy.sh
 
 #BUILD_ID = DONTKILLME
